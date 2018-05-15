@@ -1,0 +1,11 @@
+/// <reference types="handlebars" />
+import { FileOutput, Settings } from './types';
+import { SchemaTemplateContext, Document } from 'graphql-codegen-core';
+import { GeneratorConfig } from 'graphql-codegen-generators';
+export declare function generateSingleFile(
+  compiledIndexTemplate: HandlebarsTemplateDelegate,
+  executionSettings: Settings,
+  config: GeneratorConfig,
+  templateContext: SchemaTemplateContext,
+  documents: Document
+): FileOutput[];
